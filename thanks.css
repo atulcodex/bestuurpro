@@ -1,0 +1,395 @@
+/*----------- Google Fonts -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+/*--------- Color ------------*/
+:root
+{
+	--primary-color: #0563f0;
+	--secondary-color: #202228;
+	--third-color: #ffffff;
+	--para-color: #424242;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+p
+{
+	color: var(--para-color);
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+}
+
+.container
+{
+	padding: 2.6rem 1.5rem;
+}
+
+.white
+{
+	color: #ffffff;
+}
+
+/*--------- Normal button ----------*/
+.btn
+{
+	display: block;
+	background: #ffffff00;
+	padding: 0.8rem;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	display: inline-block;
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+/*---------- Small button -------------*/
+.small-btn
+{
+	display: inline-block;
+	background: #ffffff00;
+	padding: 0.8rem 2rem;
+	width: fit-content;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a > ion-icon
+{
+	display: inline-block;
+	margin-bottom: -3px;
+	margin-right: 4px;
+}
+
+/*---------- Filled with color button --------*/
+.btn-filled
+{
+	background: var(--primary-color);
+	padding: 0.7rem;
+}
+
+.btn-filled a
+{
+	color: var(--third-color);
+	text-decoration: none;
+}
+
+/*----------- Bordered button ------------*/
+.btn-bordered
+{
+	border: 1px solid #202228;
+	margin: 1rem 0;
+}
+
+.btn-bordered a
+{
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+/*----------- Shadow button --------------*/
+.btn-shadow
+{
+	transition: 0.1s;
+	margin: 1rem 0;
+}
+
+.btn-shadow:hover
+{
+	background-color: #00a8ff;
+	box-shadow: rgba(0, 168, 255, 0.2) 0px 8px 24px;
+}
+
+/*---------- Hover button -------------*/
+.btn-hover
+{
+	border: 1px solid #6952F4;
+	transition: 0.2s;
+}
+
+.btn-hover a
+{
+	color: #6952F4;
+}
+
+.btn-hover:hover
+{
+	border: none;
+	background: #6952F4;
+	box-shadow: rgba(105, 82, 244, 0.2) 0px 8px 24px;
+}
+
+.btn-hover:hover a
+{
+	color: #ffffff;
+}
+
+/*--------- White filled -------------*/
+.btn-filled-white
+{
+	background: var(--third-color);
+	transition: 0.3s;
+}
+
+.btn-filled-white:hover
+{
+	transform: translateY(10px);
+}
+
+.btn-filled-white a
+{
+	color: var(--primary-color);
+}
+
+
+/*--------------- Thanks hero ---------------*/
+.thanks
+{
+	background: url(img/thanks-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.heading
+{
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.video-container
+{
+	margin: 1.5rem 0;
+	overflow: hidden;
+    position: relative;
+    width:100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----------------- Order details ----------------*/
+.order-details
+{
+	margin: 1rem 0.8rem;
+	border: 1px solid #E9EAEC;
+	border-radius: 12px;
+	padding: 12px;
+}
+
+.order-details .first-detail, .order-details .second-detail
+{
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.small-heading
+{
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.short-detail
+{
+	margin: 1rem 0;
+	padding: 1rem 2rem;
+	background: #f6fbfe;
+}
+
+.short-detail .col
+{
+	margin: 0.8rem 0;
+}
+
+.short-detail .col p
+{
+	text-align: left;
+}
+
+.second-detail table
+{
+	margin: 1rem 0;
+	padding: 1rem 2rem;
+	background: #f6fbfe;
+	text-align: left;
+}
+
+.second-detail table th
+{
+	color: var(--secondary-color);
+	font-weight: 600;
+}
+
+.second-detail table td
+{
+	color: var(--para-color);
+	font-size: 0.8rem;
+	padding: 0.4rem 0;
+}
+
+
+
+/*-------------- Community ------------*/
+.community
+{
+	margin-top: 2.2rem;
+	background: #F6FBFE;
+}
+
+.community .container > .small-heading
+{
+	color: #9CA7AB;
+}
+
+.communities .col
+{
+	margin: 1rem 0;
+	padding: 1.8rem;
+	background: var(--third-color);
+	border: 1px solid #9CA7AB;
+	border-radius: 10px;;
+}
+
+.communities .col > ion-icon
+{
+	color: var(--primary-color);
+	font-size: 2rem;
+}
+
+.communities .col .small-heading
+{
+	font-size: 1rem;
+	font-weight: 500;
+	text-align: left;
+}
+
+.communities .col .para-line
+{
+	font-size: 0.9rem;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.communities .col > .btn
+{
+	text-align: left;
+	padding: 1rem 0 0 0;
+}
+
+
+
+/*----------------------------------------------------------*/
+/*---------------- Desktop screen styling ----------------*/
+/*----------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.container
+	{
+		padding: 5rem 12rem;
+		margin: 0 auto;
+	}
+
+	/*---------- hero styling ----------------*/
+	.thanks .container .heading
+	{
+		font-size: 4rem;
+		font-weight: 700;
+	}
+
+	.thanks .container span
+	{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.video-container
+	{
+		margin-top: 1rem;
+	}
+
+	.thanks .container button
+	{
+		display: inline-block;
+		width: fit-content;
+		padding: 0.9rem 2.2rem;
+	}
+
+
+	/*--------------- Order details -----------------*/
+	.order-details
+	{
+		margin: 3rem 16rem;
+		padding: 3rem;
+	}
+
+	.row
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.second-detail table
+	{
+		width: 100%;
+	}
+
+	.small-heading
+	{
+		text-align: left;
+	}
+
+	.community .container > .small-heading
+	{
+		text-align: center;
+	}
+}

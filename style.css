@@ -1,0 +1,1186 @@
+/*----------- Google Fonts -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+/*--------- Color ------------*/
+:root
+{
+	--primary-color: #0563f0;
+	--secondary-color: #202228;
+	--third-color: #ffffff;
+	--para-color: #424242;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+p
+{
+	color: var(--para-color);
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+}
+
+.container
+{
+	padding: 2.6rem 1.5rem;
+}
+
+.white
+{
+	color: #ffffff;
+}
+
+/*--------- Normal button ----------*/
+.btn
+{
+	display: block;
+	background: #ffffff00;
+	padding: 0.8rem;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	display: inline-block;
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+/*---------- Small button -------------*/
+.small-btn
+{
+	display: inline-block;
+	background: #ffffff00;
+	padding: 0.8rem 2rem;
+	width: fit-content;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a > ion-icon
+{
+	display: inline-block;
+	margin-bottom: -3px;
+	margin-right: 4px;
+}
+
+/*---------- Filled with color button --------*/
+.btn-filled
+{
+	background: var(--primary-color);
+	padding: 0.7rem;
+}
+
+.btn-filled a
+{
+	color: var(--third-color);
+	text-decoration: none;
+}
+
+/*----------- Bordered button ------------*/
+.btn-bordered
+{
+	border: 1px solid #202228;
+	margin: 1rem 0;
+}
+
+.btn-bordered a
+{
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+/*----------- Shadow button --------------*/
+.btn-shadow
+{
+	transition: 0.1s;
+	margin: 1rem 0;
+}
+
+.btn-shadow:hover
+{
+	background-color: #00a8ff;
+	box-shadow: rgba(0, 168, 255, 0.2) 0px 8px 24px;
+}
+
+/*---------- Hover button -------------*/
+.btn-hover
+{
+	border: 1px solid #6952F4;
+	transition: 0.2s;
+}
+
+.btn-hover a
+{
+	color: #6952F4;
+}
+
+.btn-hover:hover
+{
+	border: none;
+	background: #6952F4;
+	box-shadow: rgba(105, 82, 244, 0.2) 0px 8px 24px;
+}
+
+.btn-hover:hover a
+{
+	color: #ffffff;
+}
+
+/*--------- White filled -------------*/
+.btn-filled-white
+{
+	background: var(--third-color);
+	transition: 0.3s;
+}
+
+.btn-filled-white:hover
+{
+	transform: translateY(10px);
+}
+
+.btn-filled-white a
+{
+	color: var(--primary-color);
+}
+
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*----------------- Hero section styling -----------------*/
+.hero-bg
+{
+	width: 260px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+header .container
+{
+	padding: 1.2rem 1.5rem;
+}
+
+header .container .row
+{
+	margin: 4rem 0 1rem 0;
+}
+
+.main-heading
+{
+	color: var(--secondary-color);
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: -1px;
+}
+
+.sub-heading
+{
+	color: var(--para-color);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	margin: 1rem 0;
+}
+
+.featured-img
+{
+	margin: 1.2rem 0;
+}
+/*----------------- Hero section styling -----------------*/
+
+
+/*----------------- Clients section styling ---------------*/
+.clients .container .para-line
+{
+	color: #9ca7ab;
+	max-width: 70%;
+}
+
+.small-heading
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.item img
+{
+  width: 100%;
+  height: auto;
+}
+
+/*----------------- Clients section styling ---------------*/
+
+
+
+/*----------------- Projects section styling --------------*/
+.saas-img-wrap
+{
+	padding: 2rem 0;
+	background: url(img/img-wraper-bg.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.saas-img-wrap .saas-screen
+{
+	border: 1px solid #ecf0f1;
+	border-radius: 6px;
+}
+
+.saas-info .heading
+{
+	margin: 0.7rem 0;
+	color: var(--secondary-color);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.saas-info .para-line
+{
+	margin: 1rem 0;
+	text-align: left;
+	font-size: 0.9rem;
+	line-height: 1.8;
+}
+
+.inner-row .project-featured-list
+{
+	margin: 0.5rem 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+}
+
+.project-featured-list ion-icon
+{
+	color: var(--primary-color);
+}
+
+.project-featured-list .list-name
+{
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+/*----------------- Projects section styling --------------*/
+
+
+/*----------------- Process section styling ---------------*/
+.process .container .row
+{
+	display: flex;
+	flex-direction: column-reverse;
+}
+/*----------------- Process section styling ---------------*/
+
+
+/*------------------ Integraion section styling ----------------*/
+.integration .container .row
+{
+	display: flex;
+	flex-direction: column-reverse;
+}
+/*------------------ Integraion section styling ----------------*/
+
+
+
+/*------------------ CTA section styling ---------------------*/
+.cta .container
+{
+	padding: 0 1.5rem 2rem 1.5rem;
+}
+/*------------------ CTA section styling ---------------------*/
+
+
+
+/*------------------ Featured review section styling --------------*/
+.featured-review
+{
+	background-color: #f6fbfe;
+}
+
+.featured-author
+{
+	border: none;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+	margin: 1rem 0;
+}
+
+.featured-review-content ion-icon
+{
+	color: var(--primary-color);
+	font-size: 2rem;
+}
+
+.featured-review-content .review
+{
+	text-align: left;
+	color: var(--para-color);
+	font-size: 1.1rem;
+	font-weight: 300;
+	line-height: 1.6;
+	margin: 1rem 0;
+}
+
+.featured-review-content .author-name
+{
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 500;
+	text-align: left;
+}
+/*------------------ Featured review section styling --------------*/
+
+
+
+/*------------------ Plan section styling ---------------------*/
+.plan .container .heading
+{
+	color: var(--secondary-color);
+	text-align: center;
+}
+
+.plan .container .para-line
+{
+	margin: 1.5rem 0;
+	line-height: 1.5;
+}
+
+.plans .single-plan
+{
+	margin: 1rem 0;
+}
+
+.plans .free
+{
+	border: 2px solid #dfe6e9;
+	border-radius: 12px;
+	padding: 1.3rem;
+}
+
+.plans .free .plan-name
+{
+	color: var(--secondary-color);
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.plans .single-plan .plan-detail
+{
+	font-size: 0.9rem;
+	text-align: left;
+	margin: 1rem 0;
+}
+
+.plans .single-plan .plan-value
+{
+	color: var(--secondary-color);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1;
+	/*padding: 1rem 0;*/
+}
+
+.plans .single-plan .plan-feature
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.plan-feature
+{
+	color: var(--secondary-color);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1;
+	padding: 0.3rem 0;
+}
+
+.plan-feature ion-icon
+{
+	color: var(--primary-color);
+}
+
+
+.plans .basic
+{
+	border: 2px solid var(--primary-color);
+	border-radius: 12px;
+	padding: 1.3rem;
+	position: relative;
+}
+
+.plans .single-plan .highlighter
+{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 34%;
+	padding: 0.2rem 0.8rem;
+	border: none;
+	border-radius: 0 0 6px 6px;
+	background: var(--primary-color);
+	color: var(--third-color);
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.plans .basic .plan-name
+{
+	color: var(--primary-color);
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1;
+	padding-top: 1.6rem;
+}
+
+.plans .single-plan .plan-value em
+{
+	color: var(--para-color);
+	font-size: 1rem;
+	font-weight: 200 !important;
+}
+
+
+.plans .unlimited
+{
+	border: 2px solid #6952F4;
+	border-radius: 12px;
+	padding: 1.3rem;
+	position: relative;
+}
+
+.plans .unlimited .plan-name
+{
+	color: #6952F4;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1;
+	padding-top: 1.6rem;
+}
+
+.feature-heading
+{
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 600;
+	line-height: 2;
+}
+/*------------------ Plan section styling ---------------------
+
+
+/*------------------ Saas category styling -------------------------*/
+.saas-category
+{
+	margin: 4rem 0 0 0;
+	background: var(--primary-color);
+}
+
+.saas-category .container .heading
+{
+	text-align: center;
+	margin: 0.7rem 0;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.saas-categories .col
+{
+	border: 1px solid var(--third-color);
+	border-radius: 10px;
+	margin: 1rem 0;
+	padding: 1.6rem;
+}
+
+.saas-categories .col ion-icon
+{
+	color: var(--third-color);
+	font-size: 2rem;
+}
+
+.saas-categories .col .category-name
+{
+	color: var(--third-color);
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.saas-categories .col .detail
+{
+	color: var(--third-color);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: left;
+}
+/*------------------ Saas category styling -------------------------*/
+
+
+/*------------------ Review category styling ------------------*/
+.review .container .heading
+{
+	color: var(--secondary-color);
+	text-align: center;
+	margin: 0.7rem 0;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.reviews .col
+{
+	margin: 1.8rem 0;
+	padding: 1.5rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	background: #f6fbfe;
+}
+
+.reviews .col ion-icon
+{
+	color: var(--primary-color);
+	font-size: 1.2rem;
+}
+
+.reviews .col .review-line
+{
+	font-size: 1.1rem;
+	line-height: 1.6;
+	text-align: left;
+	margin: 0.5rem 0;
+}
+
+.reviewer-profile
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.reviewer-profile .author
+{
+	border: none;
+	border-radius: 50px;
+}
+
+.reviewer-profile .details .name
+{
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.reviewer-profile .details .username
+{
+	font-size: 0.7rem;
+	text-align: left;
+}
+/*------------------ Review category styling ------------------*/
+
+
+/*------------------ FAQ section styling ---------------------*/
+.faq .container .heading
+{
+	color: var(--secondary-color);
+	margin: 0.7rem 0;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.faqs .col
+{
+	margin: 1.3rem 0;
+}
+
+.faqs .col .question
+{
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.faqs .col .answer
+{
+	font-size: 0.9rem;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.faqs .col hr
+{
+	color: #E9EAEC;
+	margin: 1.2rem 0;
+}
+/*------------------ FAQ section styling ---------------------*/
+
+
+
+/*------------------ Footer section styling -------------------*/
+footer
+{
+	background: url(img/footer-bg.jpg);
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+footer .container 
+{
+	padding: 0 0 4rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+footer .container .heading
+{
+	color: var(--secondary-color);
+	margin: 0.7rem 0;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+/*------------------ Footer section styling -------------------*/
+
+
+
+
+/*-----------------------------------------------------------*/
+/*---------------- Desktop screen styling ---------------*/
+/*-----------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.container
+	{
+		padding: 5rem 3rem;
+		max-width: 1260px;
+		margin: 0 auto;
+	}
+
+	.row
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.row .col
+	{
+		width: 100%;
+	}
+
+	.inner-row
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.inner-row .col
+	{
+		width: 100%;
+	}
+
+	/*--------- Normal button ----------*/
+	.btn
+	{
+		display: inline-block;
+		background: #ffffff00;
+		padding: 0.8rem 2rem;
+		margin: 0;
+		width: fit-content;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.btn a
+	{
+		display: inline-block;
+		color: var(--secondary-color);
+		text-decoration: none;
+	}
+
+	/*------------ Empty button -------------*/
+	.btn-empty
+	{
+		margin: 0;
+		padding: 0
+	}
+
+	/*---------- Small button -------------*/
+	.small-btn
+	{
+		display: inline-block;
+		background: #ffffff00;
+		padding: 0.8rem 2rem;
+		width: fit-content;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.btn a > ion-icon
+	{
+		display: inline-block;
+		margin-bottom: -3px;
+		margin-right: 4px;
+	}
+
+	/*---------- Filled with color button --------*/
+	.btn-filled
+	{
+		background: var(--primary-color);
+		/*padding: 0.7rem;*/
+	}
+
+	.btn-filled a
+	{
+		color: var(--third-color);
+		text-decoration: none;
+	}
+
+	/*----------- Bordered button ------------*/
+	.btn-bordered
+	{
+		border: 1px solid #202228;
+		margin: 1rem 0;
+	}
+
+	.btn-bordered a
+	{
+		color: var(--secondary-color);
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+	/*----------- Shadow button --------------*/
+	.btn-shadow
+	{
+		transition: 0.1s;
+		margin: 1rem 0;
+	}
+
+	.btn-shadow:hover
+	{
+		background-color: #00a8ff;
+		box-shadow: rgba(0, 168, 255, 0.2) 0px 8px 24px;
+	}
+
+	/*---------- Hover button -------------*/
+	.btn-hover
+	{
+		border: 1px solid #6952F4;
+		transition: 0.2s;
+	}
+
+	.btn-hover a
+	{
+		color: #6952F4;
+	}
+
+	.btn-hover:hover
+	{
+		border: none;
+		background: #6952F4;
+		box-shadow: rgba(105, 82, 244, 0.2) 0px 8px 24px;
+	}
+
+	.btn-hover:hover a
+	{
+		color: #ffffff;
+	}
+
+	/*--------- White filled -------------*/
+	.btn-filled-white
+	{
+		background: var(--third-color);
+		transition: 0.3s;
+	}
+
+	.btn-filled-white:hover
+	{
+		transform: translateY(10px);
+	}
+
+	.btn-filled-white a
+	{
+		color: var(--primary-color);
+	}
+
+	/*------- Hero section styling ---------*/
+	.hero-bg
+	{
+		width: 1000px;
+		height: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	header .container
+	{
+		padding: 1rem 2rem;
+	}
+
+	header .container .row
+	{
+		margin: 4rem 0 1rem 0;
+	}
+
+	header .container .row .hero-img
+	{
+		width: 120%;
+	}
+
+	.hero-content
+	{
+		padding-right: 2rem
+	}
+
+	.main-heading
+	{
+		color: var(--secondary-color);
+		font-size: 4rem;
+		font-weight: 600;
+		line-height: 1.1;
+		letter-spacing: -1px;
+	}
+
+	.sub-heading
+	{
+		color: var(--para-color);
+		font-size: 1.5rem;
+		font-weight: 400;
+		line-height: 1.6;
+		margin: 2rem 0;
+	}
+
+	.featured-img
+	{
+		margin: 1.2rem 0;
+		width: 100%;
+	}
+
+
+	/*-------------- client section styling -------------*/
+	.small-heading
+	{
+		margin: 2rem;
+	}
+
+
+	/*--------------- Saas screen styling ----------------*/
+	.saas-info .container .row
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 4rem;
+	}
+
+	.saas-info .container .row .col
+	{
+		width: 100%;
+	}
+
+	.saas-img-wrap
+	{
+		padding: 5rem 0;
+	}
+
+	.saas-info .heading
+	{
+		font-size: 3rem;
+	}
+
+	.saas-info .para-line
+	{
+		font-size: 1.1rem;
+	}
+
+	.saas-info .container .row .col .inner-row
+	{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0rem;
+	}
+
+	.inner-row .project-featured-list
+	{
+		margin: 0.1rem 0;
+	}
+
+	.project-featured-list ion-icon
+	{
+		font-size: 1.3rem;
+	}
+
+	.project-featured-list .list-name
+	{
+		font-size: 1.1rem;
+	}
+
+
+	/*------------------ CTA --------------*/
+	.cta
+	{
+		display: flex;
+	}
+
+
+	/*------------------ Featured review styling -------------*/
+	.featured-review
+	{
+		background: url(img/featured-review-bg.jpg);
+	}
+
+	.featured-review .container .row .featured-review-content
+	{
+		width: 140%;
+	}
+
+	.featured-review-content ion-icon
+	{
+		font-size: 3rem;
+	}
+
+	.featured-review-content .review
+	{
+		font-size: 1.6rem;
+		font-weight: 300;
+	}
+
+	.featured-review-content .author-name
+	{
+		color: var(--secondary-color);
+		font-size: 0.9rem;
+		font-weight: 500;
+		text-align: left;
+	}
+
+
+	/*----------------- Plan section styling ---------------*/
+	.plan .container .heading
+	{
+		font-size: 3rem;
+	}
+
+	.plan .container .para-line
+	{
+		font-size: 1.2rem;
+	}
+
+	.plan .container .row
+	{
+		gap: 1.6rem;
+	}
+
+	.plans .single-plan
+	{
+		padding: 2rem;
+	}
+
+	.plans .single-plan .plan-detail
+	{
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.plans .single-plan .plan-value
+	{
+		font-size: 3rem;
+	}
+
+	.plans .single-plan .btn
+	{
+		width: 100%;
+	}
+
+	.plans .single-plan .plan-feature
+	{
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+
+	/*---------------- saas category styling -------------*/
+	.saas-category .container .heading
+	{
+		font-size: 3rem;
+	}
+
+	.saas-category .container .row
+	{
+		gap: 2rem;
+	}
+
+	.saas-category .container span
+	{
+		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.saas-categories .col .category-name
+	{
+		margin: 0.7rem 0;
+	}
+
+
+	/*-------------- Review styling -------------*/
+	.review .container .heading
+	{
+		font-size: 3rem;
+	}
+
+	.review .container .row
+	{
+		gap: 2rem;
+		align-items: flex-start;
+	}
+
+	.review .container .row .col .review-line
+	{
+		font-size: 1.5rem;
+	}
+
+	.review .container span
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+
+	/*--------------- FAQ ----------------*/
+	.faq .container .heading
+	{
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.faq .container .row
+	{
+		padding-top: 1.4rem;
+		gap: 5rem;
+	}
+
+	.faq .container .row .col
+	{
+		margin: 0;
+	}
+
+	.faq .container .row .col hr
+	{
+		opacity: 0.3;
+	}
+
+	.faq .container .row .col .question
+	{
+		color: var(--secondary-color);
+		font-size: 1.4rem;
+	}
+
+	.faq .container .row .col .answer
+	{
+		margin-top: 0.6rem;
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+
+	/*---------------- Footer styling --------------*/
+	footer
+	{
+		background-size: cover;
+	}
+
+	footer .container 
+	{		
+		height: 100vh;
+		width: auto;
+		padding: 0;
+	}
+
+	footer .container .heading
+	{
+		color: var(--secondary-color);
+		margin: 0.7rem 0;
+		text-align: center;
+		font-size: 3.6rem;
+		font-weight: 600;
+		line-height: 1.2;
+		letter-spacing: -1px;
+	}
+
+	footer .container .para-line
+	{
+		font-size: 1.4rem;
+	}
+}

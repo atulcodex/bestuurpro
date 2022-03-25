@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BestuurPro - Checkout</title>
+
+	<!-- External CSS file link -->
+	<link rel="stylesheet" href="checkout.css">
+
+	<!-- Ionicons icon CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<div class="checkout">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<div class="col sidebar">
+					<div class="container">
+						<h4 class="logo">BestuurPro</h4>
+						<h2 class="heading">
+							Supercharge your workflow
+						</h2>
+						<p class="para-line">
+							Viverra suscipit eget pellentesque mauris est accumsan dictum justo erat dis lacinia arcu velit feugiat nam
+						</p>
+
+						<img src="img/saas-automation.png" alt="">
+					</div>
+				</div>
+				<div class="col checkout-form">
+					<div class="container">
+						<h4 class="checkout-heading">Billing details</h4>
+						<form action="#">
+							<div class="field-row">
+								<div class="field-col">
+									<label for="first-name">First Name</label>
+									<input type="text" name="first-name" id="first-name" required>
+								</div>
+								<div class="field-col">
+									<label for="last-name">Last Name</label>
+									<input type="text" name="last-name" id="last-name" required>
+								</div>
+							</div>
+
+							<div class="field-row">
+								<div class="wide-col">
+									<label for="company">Company name (optional)</label>
+									<input type="text" name="company" id="company" required>
+								</div>
+							</div>
+
+							<div class="field-row">
+								<div class="wide-col">
+									<label for="email">Email address</label>
+									<input type="text" name="email" id="email" required>
+								</div>
+							</div>
+
+							<div class="field-row">
+								<div class="wide-col">
+									<label for="phone">Phone Number</label>
+									<input type="text" name="phone" id="phone" required>
+								</div>
+							</div>
+
+							<div class="field-row">
+								<div class="wide-col">
+									<label for="country">Country</label>
+									<input type="text" name="country" id="country" required>
+								</div>
+							</div>
+						</form>
+
+						<div class="plan">
+							<h4 class="checkout-heading">Choose a plan</h4>
+							<div class="row plans">
+								<div class="col">
+									<div class="inner-row free">
+										<div class="col option">
+											<input type="radio" id="free" name="plan-type" value="free">
+											<h3 class="category">Free</h3>
+											<p class="para-line">
+												For individuals or teams just getting started.
+											</p>
+										</div>
+										<div class="col price">
+											<p class="para-line">
+												$0.00
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="inner-row free">
+										<div class="col option">
+											<input type="radio" id="basic" name="plan-type" value="basic" checked>
+											<h3 class="category">Basic</h3>
+											<p class="para-line">
+												For teams that need to create project plans.
+											</p>
+										</div>
+										<div class="col price">
+											<p class="para-line">
+												$8.80
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="inner-row free">
+										<div class="col option">
+											<input type="radio" id="unlimited" name="plan-type" value="unlimited" >
+											<h3 class="category">Unlimited</h3>
+											<p class="para-line">
+												For teams and companies that need to manage work.
+											</p>
+										</div>
+										<div class="col price">
+											<p class="para-line">
+												$18.80
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="order-details">
+							<h4 class="checkout-heading">Your order</h4>
+							<table>
+								<tr>
+									<th>Product</th>
+									<th>Subtotal</th>
+								</tr>
+								<span></span>
+								<tr>
+									<td>Saas Software - Unlimited × 1</td>
+									<td>$18.80</td>
+								</tr>
+								<tr>
+									<td>Subtotal</td>
+									<td>$18.80</td>
+								</tr>
+								<span></span>
+								<tr>
+									<th>Total</th>
+									<th>$18.80</th>
+								</tr>
+							</table>
+
+							<div class="coupon">
+								<input type="text" name="code" id="code" placeholder="Coupon Code">
+								<button class="btn btn-filled">
+									<a href="#">
+										Apply
+									</a>
+								</button>
+							</div>
+						</div>
+
+						<div class="offer">
+							<input type="checkbox" id="offer" checked>
+							<label for="offer">One time special offer!</label>
+							
+							<h6>Saas Software - Extended Support</h6>
+							<p class="para-line">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+							<p class="para-line">
+								$24.90
+							</p>
+						</div>
+
+						<div class="payment-method">
+							<input type="radio" id="cash" name="pay-method" value="cash" checked>
+							<label for="cash">Cash on delivery</label>
+							<br>
+							<p class="para-line pay-method-notification">
+								Pay with cash upon delivery.
+							</p>
+							<br>
+							<input type="radio" id="paypal" name="pay-method" value="paypal">
+							<label for="paypal">Paypal</label>
+						</div>
+
+						<p class="warning">
+							Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+						</p>
+
+						<button class="btn btn-filled">
+							<a href="thanks.html">
+								<ion-icon name="lock-closed-outline"></ion-icon> Place Order $18.80
+							</a>
+						</button>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+</body>
+</html>

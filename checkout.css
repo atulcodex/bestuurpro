@@ -1,0 +1,435 @@
+/*----------- Google Fonts -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+/*--------- Color ------------*/
+:root
+{
+	--primary-color: #0563f0;
+	--secondary-color: #202228;
+	--third-color: #ffffff;
+	--para-color: #424242;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+p
+{
+	color: var(--para-color);
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+}
+
+.container
+{
+	padding: 2.6rem 1.5rem;
+}
+
+.white
+{
+	color: #ffffff;
+}
+
+/*--------- Normal button ----------*/
+.btn
+{
+	display: block;
+	background: #ffffff00;
+	padding: 0.8rem;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	display: inline-block;
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+/*---------- Small button -------------*/
+.small-btn
+{
+	display: inline-block;
+	background: #ffffff00;
+	padding: 0.8rem 2rem;
+	width: fit-content;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a > ion-icon
+{
+	display: inline-block;
+	margin-bottom: -3px;
+	margin-right: 4px;
+}
+
+/*---------- Filled with color button --------*/
+.btn-filled
+{
+	background: var(--primary-color);
+	padding: 0.7rem;
+}
+
+.btn-filled a
+{
+	color: var(--third-color);
+	text-decoration: none;
+}
+
+/*----------- Bordered button ------------*/
+.btn-bordered
+{
+	border: 1px solid #202228;
+	margin: 1rem 0;
+}
+
+.btn-bordered a
+{
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+/*----------- Shadow button --------------*/
+.btn-shadow
+{
+	transition: 0.1s;
+	margin: 1rem 0;
+}
+
+.btn-shadow:hover
+{
+	background-color: #00a8ff;
+	box-shadow: rgba(0, 168, 255, 0.2) 0px 8px 24px;
+}
+
+/*---------- Hover button -------------*/
+.btn-hover
+{
+	border: 1px solid #6952F4;
+	transition: 0.2s;
+}
+
+.btn-hover a
+{
+	color: #6952F4;
+}
+
+.btn-hover:hover
+{
+	border: none;
+	background: #6952F4;
+	box-shadow: rgba(105, 82, 244, 0.2) 0px 8px 24px;
+}
+
+.btn-hover:hover a
+{
+	color: #ffffff;
+}
+
+/*--------- White filled -------------*/
+.btn-filled-white
+{
+	background: var(--third-color);
+	transition: 0.3s;
+}
+
+.btn-filled-white:hover
+{
+	transform: translateY(10px);
+}
+
+.btn-filled-white a
+{
+	color: var(--primary-color);
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*------------------------- Sidebar styling ---------------------*/
+.sidebar
+{
+	color: var(--third-color);
+	background: var(--primary-color);
+}
+
+.sidebar .logo
+{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.sidebar .heading
+{
+	font-size: 1.7rem;
+	font-weight: 600;
+	line-height: 1.1;
+	margin: 1.2rem 0;
+}
+
+.sidebar .para-line
+{
+	color: var(--third-color);
+	text-align: left;
+	line-height: 1.6;
+	margin: 1rem 0;
+}
+
+
+
+/*------------------- Checkout area -----------------*/
+.checkout-form .container
+{
+	padding: 3.2rem 2.8rem;
+}
+
+.checkout-heading
+{
+	color: var(--secondary-color);
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.checkout-form .container form
+{
+	margin: 1.6rem 0;
+}
+
+.field-row .field-col, .field-row .wide-col
+{
+	margin: 0.9rem 0;
+}
+
+.field-row .field-col label, .field-row .wide-col label
+{
+	display: block;
+	color: var(--para-color);
+	font-size: 0.8rem;
+	padding-bottom: 0.3rem;
+}
+
+.field-row .field-col input, .field-row .wide-col input
+{
+	display: block;
+	width: 100%;
+	color: var(--para-color);
+	font-size: 0.9rem;
+	padding: 0.6rem;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+}
+
+
+/*-------------- plan styling --------------*/
+.plan
+{
+	margin: 4rem 0;
+}
+
+.plans
+{
+	border: none;
+	margin-top: 1.6rem;
+	padding: 1rem;
+	background: #f6fbfe;
+}
+
+.plans > .col
+{
+	border: none;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	margin: 1rem 0;
+	padding: 1rem 1.5rem;
+}
+
+.plans .inner-row
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.option .category
+{
+	color: var(--secondary-color);
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.option > .para-line, .price > .para-line
+{
+	color: var(--para-color);
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+
+/*------------ Order deatil styling ---------------*/
+.order-details table
+{
+	width: 100%;
+	margin: 1rem 0;
+	text-align: left	;
+}
+
+table th
+{
+	color: var(--para-color);
+	font-weight: 600;
+}
+
+table td
+{
+	color: var(--para-color);
+	font-size: 0.9rem;
+}
+
+
+/*------------- Coupon code styling -----------*/
+.coupon
+{
+	margin: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.coupon input
+{
+	width: 100%;
+	color: var(--para-color);
+	font-size: 0.9rem;
+	padding: 0.9rem;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+}
+
+
+/*-------------- Offer styling -------------*/
+.offer
+{
+	margin: 2rem 0;
+	padding: 1rem;
+	border: 2px solid var(--primary-color);
+	background: #f6fbfe;
+}
+
+.offer-heading
+{
+	color: var(--para-color);
+	font-weight: 100;
+	padding-bottom: 1rem;
+}
+
+.offer h6
+{
+	color: var(--para-color);
+	font-size: 0.8rem;
+	padding-top: 0.8rem;
+}
+
+.offer > .para-line
+{
+	color: var(--para-color);
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+
+/*------------ Payment method styling ---------*/
+.payment-method
+{
+	margin: 1.6rem 0;
+	padding: 1rem 0.8rem;
+	background: #f6fbfe;
+}
+
+.pay-method-notification
+{
+	font-size: 0.8rem;
+	background: #ffffff;
+	padding: 0.3rem 1rem;
+	text-align: left;
+}
+
+
+
+/*----------- Warning ------------*/
+.warning
+{
+	font-size: 0.8rem;
+	text-align: justify;
+	margin: 1.5rem 0;
+	line-height: 1.4;
+}
+
+
+
+
+/*-------------------------------------------------------------*/
+/*---------------- Desktop screen styling ---------------------*/
+/*-------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.container
+	{
+		max-width: 1270px;
+		margin:  0 auto;
+		padding: 2.6rem;
+	}
+
+	.checkout .row
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	.sidebar
+	{
+		height: 100vh;
+		max-width: 32%;
+		position: sticky !important;
+		top: 0;
+		left: 0;
+	}
+
+	.checkout-form .container
+	{
+		padding: 3rem 5rem;
+	}
+}
