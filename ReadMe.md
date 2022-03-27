@@ -1,7 +1,7 @@
 ## BestuurPro is open sourced SAAS product funnel website template. 
 
 
-{% youtube T4H0zAQ208 %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-T4H0zAQ208" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 BestuurPro is based on core languages like HTML & CSS no javascript involved at all. I know you might be thinking why i haven't used any framework or library to make this open sourced project. So, In short currently i am learning to develop responsive websites with core language and this is a my experiment project of gained knowledges.
