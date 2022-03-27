@@ -1,7 +1,7 @@
 ## BestuurPro is open sourced SAAS product funnel website template. 
 
 
-Video
+{% youtube T4H0zAQ208 %}
 
 
 BestuurPro is based on core languages like HTML & CSS no javascript involved at all. I know you might be thinking why i haven't used any framework or library to make this open sourced project. So, In short currently i am learning to develop responsive websites with core language and this is a my experiment project of gained knowledges.
@@ -53,7 +53,7 @@ As you already know this is a open sourced project that's why I have used some o
 
 
 
-[![Webinar booking website template](https://i.ibb.co/vwN8cgW/live-demo.png)](https://webinar-booking.netlify.app/)
+[![Webinar booking website template](https://i.ibb.co/vwN8cgW/live-demo.png)](https://bestuurpro-atulcodex.netlify.app/)
 
 
 
